@@ -1,2 +1,2 @@
 # breaking-LMs1.0
-Using LMs to discredit LMs ;)
+Using LMs to break LMs ;)
