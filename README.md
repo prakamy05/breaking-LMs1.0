@@ -49,11 +49,11 @@ ProjextRed1.0 is a Python based toolkit for generation and auditing the behavior
 
 ## 📂 Project Structure
 
-- ├── seed_prompts/           >Initial harmful prompts
-- ├── gen_prompts.py          >Generate new prompts
-- ├── inject_prompts.py       >Send prompts to LLM
-- ├── classify_bert.py        >Classify toxicity
-- ├── annotate_manual.py      >Manual labeler
-- ├── evaluate_model.py       >Evaluate classifier
-- ├── data/                   >Outputs and logs
-- ├── assets/                 >Images for README
+- seed_prompts/           >Initial harmful prompts
+- gen_prompts.py          >Generate new prompts
+- inject_prompts.py       >Send prompts to LLM
+- classify_bert.py        >Classify toxicity
+- annotate_manual.py      >Manual labeler
+- evaluate_model.py       >Evaluate classifier
+- data/                   >Outputs and logs
+- assets/                 >Images for README
