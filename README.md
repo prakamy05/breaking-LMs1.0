@@ -45,5 +45,31 @@ ProjextRed1.0 is a Python based toolkit for generation and auditing the behavior
 - 📈 Performance reporting and plots
 
 ---
+##Run the Pipeline
 
+### Generate prompts
+python gen_prompts.py
 
+### Inject prompts into LLM
+python inject_prompts.py
+
+### Classify responses
+python classify_bert.py
+
+### Manual annotation (optional)
+python annotate_manual.py
+
+### Evaluate classifier
+python evaluate_model.py
+
+##📂 Project Structure
+
+├── seed_prompts/          # Initial harmful prompts
+├── gen_prompts.py         # Generate new prompts
+├── inject_prompts.py      # Send prompts to LLM
+├── classify_bert.py       # Classify toxicity
+├── annotate_manual.py     # Manual labeler
+├── evaluate_model.py      # Evaluate classifier
+├── data/                  # Outputs and logs
+├── assets/                # Images for README
+└── README.md
