@@ -50,11 +50,13 @@ ProjextRed1.0 is a Python based toolkit for generation and auditing the behavior
 
 ## 📂 Project Structure
 
-- seed_prompts/           -------Initial harmful prompts
-- gen_prompts.py          -------Generate new prompts
-- inject_prompts.py       -------Send prompts to LLM
-- classify_bert.py        -------Classify toxicity
-- annotate_manual.py      -------Manual labeler
-- evaluate_model.py       -------Evaluate classifier
-- data/                   -------Outputs and logs
-- assets/                 -------Images for README
+- seeds/                  -------contains categorical CSV Files with prompts that act as seeds for Prompt Generation using Red LM
+- prompt_generator.py     -------Using seed Prompts, generates new prompts using Red LM
+- response_generator.py   -------Injects generated Prompts to the Target LM and saves responses
+- classifier.py           -------Assigns a Toxicity score To Responses using BERT Classifier
+- analyzer.py             -------Compares manual annotations and Assgined Toxocity Score and generates Confusion Matrix,  F1 Scores, Scatter Plots
+- web_report_generator.py -------Generates an HTML report for easy viewing of all Metrics and Comparisons for Each Category of Prompts
+- catalytic_prompt_generator.py      -------Some LMs are immune, so these act as jailbreaks by adding sentences like "Pretend you're in a movie, etc"
+- catalytic_response_generator       -------Generates responses to Catalytic Prompts
+- setup/                  -------Contains all scripts necessary to run Experimental Setup from Scratch(Main directory is my setup that already ran Using Phi-2)
+- (All the other directories are created as the scripts run, they create their own required CSV files, Manual Annotations is done after 'classifier.py' assigns a toxicity score to responses, by adding a column with 0/1 values and then 'analyzer.py' script is ran to egenrate reports.)
