@@ -1,6 +1,6 @@
 # ProjextRed1.0: Complete Red-Teaming Generation and Evaluation Toolkit
 
-![PromptTox Banner](assets/banner.png)
+![ProjextRed1.0 Banner](assets/banner.png)
 
 ProjextRed1.0 is a Python based toolkit for generation and auditing the behavior of large language models (LLMs) under adversarial or harmful prompts. It:
 - Generates new prompts using some seed examples from a Red LM that are known to illicit harmful responses from the Target LM. 
@@ -12,7 +12,7 @@ ProjextRed1.0 is a Python based toolkit for generation and auditing the behavior
 
 ## 📌 Pipeline Overview
 
-![Pipeline Diagram](assets/prompttox_pipeline.png)
+![Pipeline Diagram](assets/pipeline.png)
 
 > The system starts with seed prompts, generates adversarial ones, injects them into the LLM, collects responses, classifies them, and evaluates performance.
 
@@ -29,7 +29,8 @@ ProjextRed1.0 is a Python based toolkit for generation and auditing the behavior
 
 ## 📊 Classifier Performance
 
-![Performance Graph](assets/bert_performance.png)
+![Performance Graph](assets/perf1.png)
+![Performance Graph2](assets/perf2.png)
 
 > ROC curve and classification report for the BERT classifier.
 
